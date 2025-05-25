@@ -1,232 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="XTERNAL PRODUCTOS - Los mejores productos de optimización, crecimiento en redes sociales, paneles para Free Fire, y más.">
-    <meta name="keywords" content="XTERNAL, productos, optimización, redes sociales, paneles Free Fire, compra y venta de cuentas, tecnología">
-    <meta name="author" content="Miguel - Kendo Optz">
-    <title>XTERNAL PRODUCTOS - THE BEST DEL MUNDO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XTERNAL PRODUCTOS - Optimización de PC, crecimiento en redes, paneles Free Fire y mucho más.">
+  <meta name="keywords" content="Optimización, PC, Free Fire, paneles, redes sociales, Kendo Optz, Xternal">
+  <meta name="author" content="Miguel - Kendo Optz">
+  <title>XTERNAL PRODUCTOS - Rendimiento y Poder Digital</title>
+  <link rel="icon" href="https://example.com/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #121212;
+      color: #ffffff;
+    }
 
-    <!-- Fuentes Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    h1, h2, h3 {
+      color: #00bcd4;
+      font-weight: 600;
+    }
 
-    <!-- Icono de la página -->
-    <link rel="icon" href="https://example.com/favicon.ico">
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+      transition: 0.3s;
+    }
 
-    <!-- CSS Externo (hoja de estilo interna para este ejemplo) -->
-    <style>
-        /* Estilos Generales */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: white;
-            overflow-x: hidden;
-        }
+    a:hover {
+      color: #ffffff;
+    }
 
-        h1, h2, h3 {
-            font-weight: 600;
-            color: #00bcd4; /* Celeste */
-        }
+    .header, .footer {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
 
-        a {
-            color: #00bcd4; /* Celeste */
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-        }
+    .logo h1 { font-size: 3rem; margin: 0; }
+    .slogan { font-size: 1.2rem; font-weight: 300; }
 
-        a:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://example.com/hero-bg.jpg') center/cover no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+    }
 
-        /* Header */
-        .header {
-            background-color: #1c1c1c;
-            padding: 30px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
+    .hero h2 { font-size: 3rem; margin-bottom: 15px; }
+    .hero p { font-size: 1.4rem; max-width: 800px; margin: auto; }
 
-        .logo h1 {
-            font-size: 3.5rem;
-            margin: 0;
-        }
+    .product-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 20px;
+    }
 
-        .slogan {
-            font-size: 1.4rem;
-            font-weight: 300;
-            margin-top: 10px;
-        }
+    .product-button {
+      background-color: #00bcd4;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
 
-        /* Sección Hero */
-        .hero {
-            background-color: #121212;
-            padding: 100px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://example.com/hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
-        }
+    .product-button:hover {
+      background-color: #008ea1;
+      transform: scale(1.05);
+    }
 
-        .hero h2 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
+    .about, .services, .contact {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #1c1c1c;
+    }
 
-        .hero p {
-            font-size: 1.5rem;
-        }
+    .about p, .contact p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
 
-        /* Productos */
-        .product-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
-        }
+    .services ul {
+      list-style: none;
+      padding: 0;
+      max-width: 900px;
+      margin: 30px auto;
+    }
 
-        .product-button {
-            padding: 15px 30px;
-            background-color: #00bcd4;
-            color: white;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            text-align: center;
-            width: 250px;
-            transition: all 0.3s ease;
-        }
+    .services li {
+      background: #1f1f1f;
+      border-left: 5px solid #00bcd4;
+      padding: 20px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
 
-        .product-button:hover {
-            background-color: #007c91;
-            transform: scale(1.05);
-        }
+    .social-links a {
+      font-size: 1.5rem;
+      margin: 0 15px;
+    }
 
-        /* Sección de Acerca de Nosotros */
-        .about {
-            padding: 50px 0;
-            background-color: #1c1c1c;
-            text-align: center;
-        }
+    .footer p {
+      color: #aaa;
+    }
 
-        .about p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    @media (max-width: 768px) {
+      .product-buttons {
+        flex-direction: column;
+      }
 
-        /* Sección de Contacto */
-        .contact {
-            padding: 50px 0;
-            background-color: #121212;
-            text-align: center;
-        }
-
-        .contact h3 {
-            font-size: 2rem;
-            color: #00bcd4;
-            margin-bottom: 20px;
-        }
-
-        .contact p {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .social-links a {
-            margin: 0 15px;
-            font-size: 1.5rem;
-            color: #00bcd4;
-            text-decoration: none;
-        }
-
-        .social-links a:hover {
-            color: #ffffff;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #1c1c1c;
-            padding: 30px 0;
-            text-align: center;
-            border-top: 1px solid #444;
-        }
-
-        .footer p {
-            font-size: 1rem;
-            color: #aaa;
-        }
-
-        /* Responsividad */
-        @media (max-width: 768px) {
-            .product-buttons {
-                flex-direction: column;
-            }
-
-            .product-button {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-        }
-    </style>
+      .product-button {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>XTERNAL PRODUCTOS</h1>
-                <p class="slogan">THE BEST DEL MUNDO</p>
-            </div>
-        </div>
-    </header>
 
-    <!-- Sección Hero -->
-    <section class="hero">
-        <div class="container">
-            <h2>Bienvenido a XTERNAL</h2>
-            <p>Transformamos tu experiencia digital con productos de alta calidad.</p>
-        </div>
-    </section>
+  <header class="header">
+    <div class="logo">
+      <h1>XTERNAL PRODUCTOS</h1>
+      <p class="slogan">Rendimiento, crecimiento y confianza</p>
+    </div>
+  </header>
 
-    <!-- Productos -->
-    <section class="products">
-        <div class="container">
-                                                                     <h3>Productos Adquiribles </h3>
-            <div class="product-buttons">
-                <a href="#" class="product-button">Crecimiento en Redes Sociales</a>
-                <a href="#" class="product-button">Ventas de Paneles para Free Fire</a>
-                <a href="#" class="product-button">Compra y Venta de Cuentas</a>
-                <a href="#" class="product-button">Optimización & Modificaciones</a>
-            </div>
-        </div>
-    </section>
+  <section class="hero">
+    <h2>Bienvenido a XTERNAL</h2>
+    <p>Ofrecemos soluciones potentes para optimizar tu mundo digital. ¡Más velocidad, más control y más resultados!</p>
+  </section>
 
-    <!-- Acerca de Nosotros -->
+  <section class="product-buttons">
+    <a href="#" class="product-button">Optimización Avanzada para PC</a>
+    <a href="#" class="product-button">Crecimiento en Redes Sociales</a>
+    <a href="#" class="product-button">Paneles para Free Fire</a>
+    <a href="#" class="product-button">Compra/Venta de Cuentas</a>
+    <a href="#" class="product-button">Scripts & Tweaks Premium</a>
+  </section>
 
-    <!-- Contacto -->
-    <section class="contact">
-        <div class="container">
-            <h3>Contacta con Nosotros</h3>
-            <p>Estamos disponibles para ayudarte en cualquier momento. Si tienes preguntas o deseas más información, ¡no dudes en escribirnos!</p>
+  <section class="services">
+    <h3>¿Qué incluye una Optimización?</h3>
+    <ul>
+      <li>💻 <strong>Instalación de Windows Optimizado:</strong> versión ultra ligera y rápida, ideal para FPS y multitarea.</li>
+      <li>🛡️ <strong>Activación Segura y Permanente:</strong> sin errores ni avisos molestos. 100% funcional.</li>
+      <li>🚀 <strong>Optimización Avanzada:</strong> ajustes invisibles, eliminación de bloatware, servicios innecesarios y más.</li>
+      <li>🎮 <strong>Configuración para Juegos:</strong> tweaks especializados para mínimo input lag y máxima estabilidad.</li>
+      <li>⚙️ <strong>Scripts y Modificaciones Exclusivas:</strong> mejora de red, memoria, CPU y sistema general.</li>
+    </ul>
+  </section>
 
-            <div class="social-links">
-                <a href="https://discord.gg/cYa58H7ucr" target="_blank">Discord</a>
-                <a href="https://www.instagram.com/kendoxternal/" target="_blank">Instagram</a>
-                <p>Teléfono: <strong>+57 3053213236</strong></p>
-                <p>Correo: <strong>kendomiguel268@gmail.com</strong></p>
-            </div>
-        </div>
-    </section>
+  <section class="about">
+    <h3>¿Por qué elegir XTERNAL?</h3>
+    <p>Con más de 5 años en el mundo de la optimización, nuestros servicios están enfocados en ofrecer resultados reales, confianza, soporte completo y un enfoque personalizado según tus necesidades.</p>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 XTERNAL | Todos los derechos reservados</p>
-        </div>
-    </footer>
+  <section class="contact">
+    <h3>Contáctanos</h3>
+    <p>Estamos disponibles para ayudarte. ¡Escríbenos sin miedo!</p>
+    <div class="social-links">
+      <a href="https://discord.gg/cYa58H7ucr" target="_blank">Discord</a>
+      <a href="https://www.instagram.com/kendoxternal/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@kendooptz" target="_blank">YouTube</a>
+      <a href="https://kendooptz.com" target="_blank">Sitio Web Oficial</a>
+    </div>
+    <p>Teléfono: <strong>+57 3053213236</strong></p>
+    <p>Correo: <strong>kendomiguel268@gmail.com</strong></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 XTERNAL by Kendo Optz | Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
